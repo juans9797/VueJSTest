@@ -9,6 +9,7 @@
         <div id="app">
             <navbarmenu></navbarmenu>
             <sidebarmenu></sidebarmenu>
+            <cards></cards>
         </div>
     <script src="{{asset('js/app.js')}}"></script>
     </body>
