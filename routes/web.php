@@ -20,3 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/getIntent',[PaymentController::class,'getSetUpIntent']);
+Route::get('/createUser',[PaymentController::class,'createUser']);
+Route::post('/postPayment',[PaymentController::class,'postPayment']);
+Route::get('/paymentMethods',[PaymentController::class,'getPaymentMethods']);
+Route::get('/singlePayment',[PaymentController::class,'singlePayment']);

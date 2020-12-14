@@ -45,6 +45,14 @@
                         this.intentToken = response.data;
                     }.bind(this));
             },
+            savePaymentMethod( method ){
+                console.log("1.1");
+                axios.post('postPayment', {
+                    payment_method: method
+                }).then( function(){
+                    console.log("1.2");
+                }.bind(this));
+            },
             submitPayment() {
                 this.addPaymentStatus = 1;
                 this.stripe.confirmCardSetup(
@@ -63,13 +71,17 @@
                         this.addPaymentStatus = 3;
                         this.addPaymentStatusError = result.error.message;
                     } else {
+                        console.log("1");
+                        console.log(result);
                         this.savePaymentMethod(result.setupIntent.payment_method);
+                        console.log("2");
                         this.addPaymentStatus = 2;
+                        console.log("3");
                         this.card.clear();
                         this.name = '';
                     }
-                });
-            }
+                }.bind(this));
+            },
         }
     }
 </script>
