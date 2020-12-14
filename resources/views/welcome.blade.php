@@ -9,8 +9,9 @@
         <div id="app">
             <navbarmenu></navbarmenu>
             <sidebarmenu></sidebarmenu>
-            <cards></cards>
+            <credit-card-form></credit-card-form>
         </div>
+    <script src="https://js.stripe.com/v3/"></script>
     <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
