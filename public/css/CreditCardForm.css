@@ -1,0 +1,73 @@
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+html div .creditCardBody,
+body div .creditCardBody,
+#app div .creditCardBody {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(232, 232, 232, 0.3);
+  height: 100%;
+}
+
+html div .creditCardForm,
+body div .creditCardForm,
+#app div .creditCardForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+html div .creditCardForm h1,
+body div .creditCardForm h1,
+#app div .creditCardForm h1 {
+  background: gray;
+  margin-left: -65%;
+  margin-bottom: 55px;
+  color: white;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+html div .creditCardForm .creditCardHolder,
+body div .creditCardForm .creditCardHolder,
+#app div .creditCardForm .creditCardHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+html div .creditCardForm .creditCardHolder label,
+body div .creditCardForm .creditCardHolder label,
+#app div .creditCardForm .creditCardHolder label {
+  margin-right: 15px;
+}
+
+html div .creditCardForm .creditCardHolder input,
+body div .creditCardForm .creditCardHolder input,
+#app div .creditCardForm .creditCardHolder input {
+  flex-grow: 1;
+}
+
+html div .stripeCard,
+body div .stripeCard,
+#app div .stripeCard {
+  width: 80%;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+}
+

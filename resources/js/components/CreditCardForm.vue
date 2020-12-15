@@ -1,13 +1,22 @@
 <template>
-    <div>
-        <input id="card-holder-name" type="text" v-model="name">
+    <div class="creditCardBody">
+        <div class="creditCardForm">
+            <h1>
+                Credit Card Details
+            </h1>
+            <div class="creditCardHolder">
+                <label>Card Holder Name</label>
+                <input id="card-holder-name" type="text" v-model="name">
+            </div>
 
-        <!-- Stripe Elements Placeholder -->
-        <div id="card-element"></div>
 
-        <button id="card-button" v-on:click="submitPayment">
-            Update Payment Method
-        </button>
+            <!-- Stripe Elements Placeholder -->
+            <div id="card-element" class="stripeCard"></div>
+
+            <button id="card-button" v-on:click="submitPayment">
+                Update Payment Method
+            </button>
+        </div>
     </div>
 </template>
 
@@ -38,6 +47,9 @@
                 this.card = this.elements.create('card');
 
                 this.card.mount('#card-element');
+                /*this.card.on('change',function(event){
+                    console.log(event);
+                });*/
             },
             loadIntent() {
                 axios.get('/getIntent')
