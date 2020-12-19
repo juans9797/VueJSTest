@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="873d2fb6-fac3-4339-949c-3e96e854e1e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/sass/CreditCardForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/VueJsTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VueJsTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/CreditCardForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/CreditCardForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/CreditCardForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/CreditCardForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/CreditCardForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/CreditCardForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -190,7 +191,14 @@
       <workItem from="1607919985774" duration="3041000" />
       <workItem from="1607981661356" duration="701000" />
       <workItem from="1607997743304" duration="9850000" />
-      <workItem from="1608007688941" duration="883000" />
+      <workItem from="1608007688941" duration="992000" />
+      <workItem from="1608056167145" duration="604000" />
+      <workItem from="1608066722744" duration="386000" />
+      <workItem from="1608129947404" duration="599000" />
+      <workItem from="1608158903605" duration="7304000" />
+      <workItem from="1608208157588" duration="592000" />
+      <workItem from="1608392437199" duration="839000" />
+      <workItem from="1608396779424" duration="3185000" />
     </task>
     <task id="LOCAL-00001" summary="Added stripe config">
       <created>1607902858668</created>
@@ -220,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607922928718</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added style to credit card form">
+      <created>1608008618872</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608008618872</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +257,7 @@
     <MESSAGE value="Added stripe config" />
     <MESSAGE value="Added payment method to stripe, pending to save the payment method on the API" />
     <MESSAGE value="Added more stripe functionalities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more stripe functionalities" />
+    <MESSAGE value="Added style to credit card form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added style to credit card form" />
   </component>
 </project>

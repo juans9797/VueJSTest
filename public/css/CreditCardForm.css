@@ -1,73 +1,45 @@
-html,
-body,
-#app {
-  height: 100%;
-  overflow: hidden;
-}
-
-html div .creditCardBody,
-body div .creditCardBody,
-#app div .creditCardBody {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(232, 232, 232, 0.3);
+html {
   height: 100%;
 }
 
-html div .creditCardForm,
-body div .creditCardForm,
-#app div .creditCardForm {
+html body {
+  height: 100%;
+}
+
+html body #app {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 40%;
-  height: 50%;
-  background-color: white;
-  border-radius: 10px;
-  margin-top: 50px;
+  height: 100%;
 }
 
-html div .creditCardForm h1,
-body div .creditCardForm h1,
-#app div .creditCardForm h1 {
-  background: gray;
-  margin-left: -65%;
-  margin-bottom: 55px;
-  color: white;
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+.containerBody {
+  height: 100%;
+  background-color: #e8e8e8;
 }
 
-html div .creditCardForm .creditCardHolder,
-body div .creditCardForm .creditCardHolder,
-#app div .creditCardForm .creditCardHolder {
-  display: flex;
-  align-items: center;
+.containerBody .boostrapRow {
   justify-content: center;
-  width: 80%;
 }
 
-html div .creditCardForm .creditCardHolder label,
-body div .creditCardForm .creditCardHolder label,
-#app div .creditCardForm .creditCardHolder label {
-  margin-right: 15px;
-}
-
-html div .creditCardForm .creditCardHolder input,
-body div .creditCardForm .creditCardHolder input,
-#app div .creditCardForm .creditCardHolder input {
-  flex-grow: 1;
-}
-
-html div .stripeCard,
-body div .stripeCard,
-#app div .stripeCard {
-  width: 80%;
-  padding: 10px;
-  margin: 15px;
-  border: 2px solid #e8e8e8;
+.containerBody .boostrapRow .creditCardBodyForm {
+  background-color: white;
+  padding: 15px;
   border-radius: 10px;
+  margin-top: 20px;
+}
+
+.containerBody .boostrapRow .creditCardBodyForm .stripeCard {
+  padding: 5px;
+  border: solid 2px #d4d4d4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.containerBody .boostrapRow .creditCardBodyForm .creditCardHolder {
+  margin-bottom: 10px;
+}
+
+.containerBody .boostrapRow .creditCardBodyForm .creditCardHolder label {
+  margin-right: 10px;
 }
 

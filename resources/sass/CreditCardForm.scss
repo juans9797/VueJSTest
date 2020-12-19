@@ -1,56 +1,44 @@
-html,body,#app{
+html{
     height: 100%;
-    overflow: hidden;
-    div{
-        .creditCardBody{
+    body{
+        height: 100%;
+        #app{
             display: flex;
-            justify-content: center;
-            background-color: rgba(232,232,232,0.3);
+            flex-direction: column;
             height: 100%;
         }
-        .creditCardForm{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 40%;
-            height: 50%;
-            background-color: rgba(255,255,255,1);
-            border-radius: 10px;
-            margin-top: 50px;
 
-            h1{
-                background: gray;
-                margin-left: -65%;
-                margin-bottom: 55px;
-                color: white;
-                border-radius: 10px;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-
-            .creditCardHolder{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 80%;
-                label{
-                    margin-right: 15px;
-                }
-
-                input{
-                    flex-grow: 1;
-                }
-            }
-        }
-
-        .stripeCard{
-            width: 80%;
-            padding: 10px;
-            margin: 15px;
-            border: 2px solid rgba(232,232,232,1);
-            border-radius: 10px;
-        }
     }
 }
 
+.containerBody{
+    height: 100%;
+    background-color: rgba(232,232,232,1);
+    .boostrapRow
+    {
+        justify-content: center;
+
+        .creditCardBodyForm{
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+
+            .stripeCard{
+                padding: 5px;
+                border: solid 2px rgba(212, 212, 212,1);
+                border-radius: 10px;
+                margin-bottom: 10px;
+            }
+
+            .creditCardHolder{
+                margin-bottom: 10px;
+
+                label{
+                    margin-right: 10px;
+                }
+
+            }
+        }
+    }
+}

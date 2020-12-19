@@ -30,6 +30,7 @@ Vue.component('sidebarmenu', require('./components/SideBarMenu.vue').default);
 Vue.component('navbarmenu', require('./components/NavBar').default);
 Vue.component('cards', require('./components/Cards').default);
 Vue.component('creditCardForm', require('./components/CreditCardForm').default);
+Vue.component('creditcardformbootstrap', require('./components/CreditCardFormBootstrap').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
