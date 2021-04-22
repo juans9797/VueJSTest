@@ -11,7 +11,7 @@ class TestController extends Controller
         //dd("Aqui");
         $emailType = "mail.mensajeCorreo";
         $to_name = "Administrador Licorera La Rebaja";
-        $to_email = ['juansebastianrivera@hotmail.com'];
+        $to_email = ['<email to send>'];
         $subject = "Test";
         $data = array("idPedido"=>'1',"cliente"=>'1');
         Mail::send($emailType,$data,function($message) use ($subject, $to_name, $to_email)
