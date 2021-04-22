@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="873d2fb6-fac3-4339-949c-3e96e854e1e8" name="Default Changelist" comment="" />
+    <list default="true" id="873d2fb6-fac3-4339-949c-3e96e854e1e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/mail/mensajeCorreo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -152,7 +157,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -160,9 +165,14 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -189,7 +199,16 @@
       <workItem from="1608158903605" duration="7304000" />
       <workItem from="1608208157588" duration="592000" />
       <workItem from="1608392437199" duration="839000" />
-      <workItem from="1608396779424" duration="3447000" />
+      <workItem from="1608396779424" duration="7236000" />
+      <workItem from="1608586082837" duration="6000" />
+      <workItem from="1608587201171" duration="88000" />
+      <workItem from="1608819575805" duration="117000" />
+      <workItem from="1608819715425" duration="13000" />
+      <workItem from="1609879764391" duration="603000" />
+      <workItem from="1611088501795" duration="832000" />
+      <workItem from="1611518192525" duration="100000" />
+      <workItem from="1611531027088" duration="38000" />
+      <workItem from="1619113115761" duration="1218000" />
     </task>
     <task id="LOCAL-00001" summary="Added stripe config">
       <created>1607902858668</created>
@@ -233,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608400041734</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="New items">
+      <created>1608400281908</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608400281908</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

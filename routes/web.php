@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('testMail', [TestController::class, '__invoke']);
 
 Route::get('/getIntent',[PaymentController::class,'getSetUpIntent']);
 Route::get('/createUser',[PaymentController::class,'createUser']);
 Route::post('/postPayment',[PaymentController::class,'postPayment']);
 Route::get('/paymentMethods',[PaymentController::class,'getPaymentMethods']);
 Route::get('/singlePayment',[PaymentController::class,'singlePayment']);
+Route::get('/suscribe',[PaymentController::class,'subscription']);
+Route::get('/cancelSuscription',[PaymentController::class,'cancelSubscription']);
+Route::get('/resumeSuscription',[PaymentController::class,'resumeSuscription']);

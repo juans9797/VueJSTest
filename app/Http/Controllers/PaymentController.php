@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -25,7 +26,7 @@ class PaymentController extends Controller
         return response($user->createSetupIntent(),Response::HTTP_OK);
     }
 
-    public function postPayment(Request $request)
+    public function postPayment(Request $request): JsonResponse
     {
         $user = User::where('email','juan@gmail.com')->firstOrFail();
         $paymentMethodID = $request->get('payment_method');
@@ -44,14 +45,33 @@ class PaymentController extends Controller
     {
         $user = User::where('email','juan@gmail.com')->firstOrFail();
         $paymentMethods = $user->paymentMethods();
-        dd($paymentMethods);
         return response(json_encode($paymentMethods),Response::HTTP_OK);
     }
 
-    public function singlePayment(Request $request)
+    public function singlePayment(Request $request): JsonResponse
     {
         $user = User::where('email','juan@gmail.com')->firstOrFail();
         $user->charge(800, 'pm_1Hy9CXGDeLuTbz9VLrcv1Qnw');
         return response()->json( null, 204 );
+    }
+
+    public function subscription()
+    {
+        $user = User::where('email','juan@gmail.com')->firstOrFail();
+        $user->newSubscription(
+        'Test 1', 'price_1I09ghGDeLuTbz9VCOaVGgrr'
+    )->create('pm_1Hy9CXGDeLuTbz9VLrcv1Qnw');
+    }
+
+    public function cancelSubscription()
+    {
+        $user = User::where('email','juan@gmail.com')->firstOrFail();
+        $user->subscription('Test 1')->cancel();
+    }
+
+    public function resumeSuscription()
+    {
+        $user = User::where('email','juan@gmail.com')->firstOrFail();
+        $user->subscription('Test 1')->resume();
     }
 }
